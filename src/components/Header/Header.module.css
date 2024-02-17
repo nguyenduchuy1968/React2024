@@ -1,0 +1,22 @@
+.Header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 50px;
+    background-color: darkblue;
+}
+
+.Header a{
+    text-decoration: none;
+    font-size: 25px;
+    color: snow;
+}
+
+.Header a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.Header a[class='active'] {
+    color: red;
+}

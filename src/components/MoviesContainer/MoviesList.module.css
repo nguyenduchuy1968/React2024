@@ -1,0 +1,8 @@
+.MoviesList {
+    /*width: 1000px;*/
+    display: grid;
+    grid-template-columns: repeat(5, 18vw) ;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -6,6 +6,8 @@ const Header = () => {
         <div className={css.Header}>
             <NavLink to={'/movies'}>Movies Page </NavLink>
             <NavLink to={'/genres'}>Genres</NavLink>
+            <NavLink to={'/movies/search'}>Search</NavLink>
+
         </div>
     );
 };

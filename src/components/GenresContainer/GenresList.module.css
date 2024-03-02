@@ -1,4 +1,9 @@
 .GenresList {
+    /*width: 800px;*/
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    /*row-gap: 10px;*/
+    color: red;
+    justify-content: center;
 }

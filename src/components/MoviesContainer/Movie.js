@@ -11,7 +11,7 @@ const Movie = ({movie}) => {
     return (
         <div className={css.Movie}>
             <img src={posterFullPath} alt={title} onClick={() => navigate(`/movies/${id}`)}></img>
-            <div> vote_average: {vote_average}</div>
+            <div> rating: {vote_average}</div>
             <div> title: {title}</div>
             <div> id: {id}</div>
         </div>

@@ -1,3 +1,48 @@
-.MovieInfo {
+.MovieInfo_container {
+   padding: 30px
 
+}
+
+.MovieInfo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin: 30px auto;
+}
+
+.MovieInfo_desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /*align-content: center;*/
+    /*align-items: center;*/
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.MovieInfo_title {
+    text-align: center;
+
+}
+
+.MovieInfo_action {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.MovieInfo_content_title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.MovieInfo_content {
+    font-style: italic;
+    font-size: 14px;
+    width: 70%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5em;
 }

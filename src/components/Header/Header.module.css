@@ -1,9 +1,13 @@
 .Header {
+    /*width: 78vw;*/
     display: flex;
     justify-content: space-around;
     align-content: center;
-    height: 50px;
-    background-color: blue;
+    align-items: center;
+    height: 100px;
+    background-color: #333A73;
+
+
 }
 
 .Header a {
@@ -15,4 +19,18 @@
 .Header a:hover {
     text-decoration: underline;
     color: yellow;
+}
+
+.Header_logo {
+    color: #333A73;
+    font-size: 30px;
+    stroke: #FBA834;
+    background-color: #FBA834;
+    padding: 5px 10px;
+    border: 1px solid coral;
+    border-radius: 10px;
+}
+
+input {
+    background-color: red ;
 }

@@ -1,6 +1,7 @@
 const baseURL = 'https://api.themoviedb.org/3'
 const imageBaseUrl = 'https://image.tmdb.org/t/p'
 const posterSize = 'w200'
+const posterSize_infoPage = 'w300'
 
 // const imageBaseURL = 'https://image.tmdb.org/t/p'
 
@@ -55,6 +56,7 @@ export {
     baseURL,
     imageBaseUrl,
     posterSize,
+    posterSize_infoPage,
     urls,
     api_key,
     search

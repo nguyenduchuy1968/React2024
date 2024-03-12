@@ -1,0 +1,26 @@
+.PrevNextNavigate {
+    width: 100vw;
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-evenly;
+}
+
+.PrevNextNavigate_wrapper {
+    display: flex;
+}
+
+
+.PrevNextNavigate a {
+    /*background-color: #387ADF;*/
+    /*color: white;*/
+    /*padding: 5px 10px;*/
+    /*!*border-radius: 10px;*!*/
+    font-size: 20px;
+    /*border: none;*/
+}
+
+.PrevNextNavigate a:hover {
+    color: #50C4ED;
+    cursor: pointer;
+
+}

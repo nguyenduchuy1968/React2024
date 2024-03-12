@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {movieService} from "../../services";
 import {Movie} from "./Movie";
 import css from './MoviesList.module.css'
+import globalCss from '../../globalCss/globalCss_Paginate.module.css'
 import {useSearchParams} from "react-router-dom";
 import {useAppContext} from "../../hooks/useAppContext";
 import {Paginate} from "../PaginateContainer/Paginate";
@@ -10,7 +11,7 @@ import {Paginate} from "../PaginateContainer/Paginate";
 const MoviesList = () => {
     const [moviesList, setMoviesList] = useState([])
     // const [prevNext, setPrevNext] = useState({prev:null, next:null})
-    const [totalPage, setTotalPage] = useState({total_pages:null})
+    const [totalPage, setTotalPage] = useState({total_pages: null})
 
     // const {trigger} = useAppContext();
     const [query, setQuery] = useSearchParams({page: '1'});
@@ -25,7 +26,7 @@ const MoviesList = () => {
             .then(({data}) => {
                 setMoviesList(data.results)
                 // setPrevNext({prev: data.results.prev, next: data.results.next})
-                setTotalPage({total_pages:data.total_pages})
+                setTotalPage({total_pages: data.total_pages})
             })
     }, [query]);
 
@@ -45,14 +46,17 @@ const MoviesList = () => {
 
 
     return (
-        <div className={css.MoviesList}>
-            {moviesList && moviesList.map(movie => <Movie key={movie.id} movie={movie}/>)}
+        <div>
+            <div className={css.MoviesList}>
+                {moviesList && moviesList.map(movie => <Movie key={movie.id} movie={movie}/>)}
+            </div>
+            <div className={globalCss.paginate}>
+                {moviesList.length > 0 && <Paginate page={query.get('page')} totalPage={totalPage}/>}
 
-            <Paginate page={query.get('page')}  totalPage={totalPage}/>
-
-            {/*<button disabled={query.get('page') <= '1'} onClick={prev}>prev</button>*/}
-            {/*<h4> page{query.get('page')}</h4>*/}
-            {/*<button disabled={query.get('page') === totalPage.total_pages} onClick={next}>next</button >*/}
+                {/*<button disabled={query.get('page') <= '1'} onClick={prev}>prev</button>*/}
+                {/*<h4> page{query.get('page')}</h4>*/}
+                {/*<button disabled={query.get('page') === totalPage.total_pages} onClick={next}>next</button >*/}
+            </div>
         </div>
     );
 };

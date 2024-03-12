@@ -6,7 +6,6 @@ const GenresListPage = () => {
 
     return (
         <div>
-            GenresListPage
             <GenresList />
             <Outlet />
         </div>

@@ -1,0 +1,18 @@
+.Paginate {
+    /*width: 100vw;*/
+    display: flex;
+    flex-direction: row;
+   gap: 100px;
+    height: 50px;
+    align-items: center;
+    /*background-color: coral;*/
+    margin: 30px;
+}
+
+.Paginate button {
+    background-color: #387ADF;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}

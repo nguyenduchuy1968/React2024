@@ -7,8 +7,10 @@ const ContextProvider = ({children}) => {
     const changeTrigger = () => {
         setTrigger(prev => !prev)
     }
+
+
     return (
-        <Context.Provider value={{trigger, }} >
+        <Context.Provider value={{trigger, changeTrigger}} >
             {children}
         </Context.Provider>
     );

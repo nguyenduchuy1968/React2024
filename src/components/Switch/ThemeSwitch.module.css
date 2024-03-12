@@ -1,0 +1,12 @@
+.ThemeSwitch {
+   /*position: sticky;*/
+    background-color: #50C4ED;
+    /*height: 0;*/
+}
+
+.ThemeSwitch_sticky {
+    /*position: absolute;*/
+    /*top: 60px;*/
+    background-color: #FBA834;
+    margin: 0 20px;
+}

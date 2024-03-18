@@ -1,7 +1,7 @@
 import {Outlet, useNavigate} from "react-router-dom";
 
-import {Header} from "../components";
-import {PrevNextNavigate} from "../components/PrevNextNavigate";
+import {Header} from "../components"
+import {PrevNextNavigate} from "../components/PrevNextNavigate/PrevNextNavigate"
 import css from './MainLayout.module.css'
 import {useContext, useEffect, useState} from "react";
 import {SwitchContext, ThemeSwitch} from "../components/Switch/ThemeSwitch";

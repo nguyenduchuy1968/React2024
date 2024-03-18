@@ -10,15 +10,12 @@ const CarForm = () => {
 
     const {carForUpdate} = useSelector(state => state.cars)
     const save = async (car) => {
-        await carService.create(car)
-        dispatch(carActions.setTrigger())
+        await dispatch(carActions.create({car}))
         reset()
     }
 
     const update = async (car) => {
-        await carService.updateById(carForUpdate.id, car)
-        dispatch(carActions.setTrigger())
-        dispatch(carActions.setCarForUpdate(null))
+        dispatch(carActions.updateById({id: carForUpdate.id, carData: car}))
         reset()
     }
 

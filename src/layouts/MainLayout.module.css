@@ -1,0 +1,12 @@
+.MainLayout {
+    box-sizing: border-box;
+}
+
+.MainLayout_light {
+    background-color: #ddfffc;
+}
+
+.MainLayout_dark {
+    background-color: #050f42;
+    color: white;
+}

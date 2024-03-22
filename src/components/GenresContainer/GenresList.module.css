@@ -1,0 +1,25 @@
+.GenresList {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    justify-content: center;
+    margin: 0 auto;
+    color: #050f42;
+    padding: 40px 0;
+}
+
+.Genre {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #FBA834;
+    border-radius: 10px;
+}
+
+li > a:hover {
+    color: yellow;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+

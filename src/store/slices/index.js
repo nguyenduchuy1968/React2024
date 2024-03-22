@@ -1,0 +1,7 @@
+export * from './loadingSlice'
+export * from './movieInfoSlice'
+export * from './moviesSlice'
+export * from './genreMoviesSlice'
+export * from './genresSlice'
+export * from './searchSlice'
+export * from './themeSwitchSlice'

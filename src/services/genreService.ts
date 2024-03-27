@@ -1,7 +1,7 @@
 import {apiService} from "./apiService";
 import {api_key, urls} from "../constants";
 import {IRes} from "../types";
-import {IGenre} from "../interfaces/genreInterface";
+import {IGenre} from "../interfaces";
 import {IMovie, IPagination} from "../interfaces";
 
 const genreService = {

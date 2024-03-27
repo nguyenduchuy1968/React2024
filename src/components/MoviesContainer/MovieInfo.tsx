@@ -6,7 +6,7 @@ import {FC} from "react";
 
 import {imageBaseUrl, posterSize_infoPage} from "../../constants";
 import {StarRating} from "../StarRating";
-import {IMovieInfo} from "../../interfaces/movieInfoInterface";
+import {IMovieInfo} from "../../interfaces";
 import noImage from '../../lib/noImage.png'
 import css from './MovieInfo.module.css'
 

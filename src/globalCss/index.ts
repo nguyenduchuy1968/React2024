@@ -1,0 +1,1 @@
+export * from './globalCss_Paginate.module.css'

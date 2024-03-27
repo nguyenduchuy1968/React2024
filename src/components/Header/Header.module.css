@@ -1,0 +1,30 @@
+.Header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #333A73;
+}
+
+.Header a {
+    text-decoration: none;
+    color: snow;
+    font-size: 25px;
+}
+
+.Header a:hover {
+    text-decoration: underline;
+    color: coral;
+    font-size: 26px;
+}
+
+.Header_logo {
+    color: #333A73;
+    font-size: 30px;
+    stroke: #FBA834;
+    background-color: #FBA834;
+    padding: 5px 10px;
+    border: 1px solid coral;
+    border-radius: 10px;
+}

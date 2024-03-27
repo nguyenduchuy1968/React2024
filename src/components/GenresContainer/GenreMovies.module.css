@@ -1,0 +1,14 @@
+.GenreMovieList {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin: 30px auto;
+    gap: 40px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}

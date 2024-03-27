@@ -1,0 +1,20 @@
+.PrevNextNavigate {
+    width: 100vw;
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-evenly;
+}
+
+.PrevNextNavigate_wrapper {
+    display: flex;
+}
+
+.PrevNextNavigate a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.PrevNextNavigate a:hover {
+    color: red;
+    cursor: pointer;
+}

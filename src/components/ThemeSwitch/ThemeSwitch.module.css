@@ -1,0 +1,9 @@
+.ThemeSwitch {
+    background-color: #FBA834;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.ThemeSwitch_title {
+    color: white;
+}
